@@ -1,9 +1,16 @@
 import "./App.css";
+import Header from "./Header";
+import SideBar from "./SideBar";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Header />
+      <main>
+        <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+          <SideBar />
+        </div>
+      </main>
     </>
   );
 }
