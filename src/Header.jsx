@@ -7,6 +7,7 @@ import CartDetails from "./cine/CartDetails";
 
 export default function Header() {
   const [showCart, setShowCart] = useState(false);
+
   function handleCartShow() {
     setShowCart(true);
   }

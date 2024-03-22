@@ -3,7 +3,6 @@ import Star from "../assets/star.svg";
 
 export default function Rating({ value }) {
   const stars = Array(value).fill(Star);
-  console.log(stars);
   return (
     <>
       {stars.map((star, index) => (
