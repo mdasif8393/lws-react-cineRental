@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { toast } from "react-toastify";
 import Delete from "../assets/delete.svg";
 import Checkout from "../assets/icons/checkout.svg";
 import { MovieContext } from "../context";
@@ -14,6 +15,7 @@ export default function CartDetails({ onClose }) {
       type: "REMOVE_FROM_CART",
       payload: item,
     });
+    toast.success(`Removed ${item.title} from cart`);
   }
 
   return (

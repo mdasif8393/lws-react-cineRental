@@ -11,8 +11,7 @@ export default function Header() {
   const [showCart, setShowCart] = useState(false);
   const { state } = useContext(MovieContext);
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-
-  console.log(state.cartData);
+  console.log(state);
 
   function handleCartShow() {
     setShowCart(true);
